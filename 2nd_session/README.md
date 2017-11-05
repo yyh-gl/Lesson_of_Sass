@@ -125,6 +125,8 @@ SCSSファイル群の中で，CSSクラスに関する記述がどこに存在�
 
 * BEM
 
+	* [詳細](https://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/)
+
 	* Block -- Element -- Modifierで命名ブロックを定義
 
 ~~~
@@ -132,8 +134,6 @@ SCSSファイル群の中で，CSSクラスに関する記述がどこに存在�
 .person--hand {}
 .person--femail--hand {}
 ~~~
-
-	* [詳細](https://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/)
 
 
 ## 依存判断の問題
