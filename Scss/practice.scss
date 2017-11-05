@@ -1,6 +1,8 @@
 $color-main: #ff00ff;
 
+// ネストが可能
 #main{
+	// 演算子が使用可能
   border-top: 1px+100px solid #000;
   margin:100px-20px;
   width: 20%*3;
@@ -16,11 +18,15 @@ $color-main: #ff00ff;
   &:hover {background:red;}
 }
 
+// コードの再利用が可能 @mixin
+// mixinにプロパティを渡せる @content
 @mixin mediaQuery {
   @media screen and (min-width:480px) and (max-width:768px) { @content }
   @media screen and (min-width:0px) and (max-width:479px) { background: black }
 }
 
+// コードの再利用が可能 @mixin
+// mixinに引数を渡せる
 @mixin button($size: 10px, $color: yellow) {
   dispaly: inline-block;
   padding: $size;
@@ -32,6 +38,7 @@ $color-main: #ff00ff;
   }
 }
 
+// @mixinで定義したものを@includeで使用
 .button-default {
   @include button();
   
