@@ -1,0 +1,49 @@
+$color-main: #ff00ff;
+
+#main{
+  border-top: 1px+100px solid #000;
+  margin:100px-20px;
+  width: 20%*3;
+  width: (95%/3);
+  h1{ 
+    font-size: 40px;
+    color: $color-main;
+  }
+  p { 
+    color: red;
+  }
+
+  &:hover {background:red;}
+}
+
+@mixin mediaQuery {
+  @media screen and (min-width:480px) and (max-width:768px) { @content }
+  @media screen and (min-width:0px) and (max-width:479px) { background: black }
+}
+
+@mixin button($size: 10px, $color: yellow) {
+  dispaly: inline-block;
+  padding: $size;
+  border: 2px solid black;
+  background: $color;
+  
+  &:hover {
+    background: white;
+  }
+}
+
+.button-default {
+  @include button();
+  
+  @include mediaQuery {
+    background: green;
+  }
+}
+
+.button-red {
+  @include button(20px, red);
+}
+
+.button-blue {
+  @include button(30px, blue);
+}
