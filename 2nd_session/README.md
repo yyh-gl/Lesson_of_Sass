@@ -109,7 +109,7 @@ SCSSファイル群の中で，CSSクラスに関する記述がどこに存在�
 
 	* ECSSに有効
 
-'''
+~~~
 .pageTop {
     @import "_top.scss"
 }
@@ -117,7 +117,7 @@ SCSSファイル群の中で，CSSクラスに関する記述がどこに存在�
 .pageAbout {
     @import "_about.scss"
 }
-'''	
+~~~	
 
 * 複雑なクラス名を用いた方法
 
@@ -127,11 +127,11 @@ SCSSファイル群の中で，CSSクラスに関する記述がどこに存在�
 
 	* Block -- Element -- Modifierで命名ブロックを定義
 
-'''
+~~~
 .person {}
 .person--hand {}
 .person--femail--hand {}
-'''
+~~~
 
 	* [詳細](https://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/)
 
